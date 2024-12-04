@@ -1,0 +1,64 @@
+.formLogin{
+    background-color: rgba(0, 0, 0, 0.048);
+    border: 10px  rgba(0, 0, 0, 0.13);
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 1px 8px 12px rgba(0, 0, 0, 0.13);
+    margin: 5px 0 25px 0;
+    display: flex;
+    flex-direction: column;
+}
+ 
+.formTitle{
+    color: $color-fuente-oscuro;
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 15px 0 8px 0;
+}
+ 
+.formLogin-contenedor{
+    padding: 5px;
+    margin: 5px 0 5px 0;
+    display: flex;
+    flex-direction: column;
+}
+ 
+.formLogin-contenedor__label{
+    color: $color-fuente-oscuro;
+    font-weight: bold;
+    font-size: 1rem;
+}
+ 
+.formLogin-contenedor__input{
+    box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.13);
+}
+ 
+.formLogin-contenedor__button{
+    background-color: $color-fondo;
+    color: $color-fuente-blanco;
+    border: none;
+    font-size: 1.2rem;
+    width: 45%; 
+    margin-left: 27%;
+}
+.formLogin-contenedor-select__option{
+    color: $color-fuente-oscuro;
+    font-weight: bold;
+}
+ 
+.formTextToRegister{
+    font-size: 1.2rem;
+    text-align: center;
+}
+ 
+.formSelectDate{
+    box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.13);        
+    border: none;
+    color: $color-fuente-oscuro;
+    background-color: ffff;
+    font-size: 1.2rem;
+    width: 60%;
+    padding: 5px;
+    border-radius: 5px;
+}

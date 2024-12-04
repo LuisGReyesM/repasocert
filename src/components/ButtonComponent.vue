@@ -1,0 +1,96 @@
+<script>
+export default {
+    name: 'ButtonComponent'
+}
+</script>
+
+<template>
+    <button class="button btn" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <span class="shadow"></span>
+        <span class="edge"></span>
+        <div class="front">
+            <span>Agregar</span>
+        </div>
+    </button>
+</template>
+
+<style scoped>
+    .button {
+
+  margin: 0 0 0 63%;
+  position: fixed;
+  border: none;
+  background: transparent;
+  padding: 0;
+  outline: none;
+  cursor: pointer;
+  font-family: sans-serif;
+}
+
+.button .shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  transform: translateY(2px);
+  transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
+}
+
+.button .edge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  background: linear-gradient(
+    to left,
+    hsl(217, 33%, 16%) 0%,
+    hsl(217, 33%, 32%) 8%,
+    hsl(217, 33%, 32%) 92%,
+    hsl(217, 33%, 16%) 100%
+  );
+}
+
+.button .front {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 24px;
+  font-size: 1rem;
+  color: white;
+  background: hsl(217, 33%, 17%);
+  border-radius: 8px;
+  transform: translateY(-4px);
+  transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
+}
+
+.button:hover .shadow {
+  transform: translateY(4px);
+  transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+}
+
+.button:hover .front {
+  transform: translateY(-6px);
+  transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+}
+
+.button:active .shadow {
+  transform: translateY(1px);
+  transition: transform 34ms;
+}
+
+.button:active .front {
+  transform: translateY(-2px);
+  transition: transform 34ms;
+}
+
+
+.button .front span {
+  user-select: none;
+}
+</style>
